@@ -13,10 +13,6 @@ interface Profile {
   description: string;
 }
 
-interface Query {
-  me: Profile;
-}
-
 const resolvers = {
   Query: {
     me(parent: any, args: any, context: any, info: any): Profile {
