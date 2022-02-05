@@ -40,8 +40,8 @@ export const ProfileComponent = ({
         >
           <ProfileImageComponent src={imgSrc} />
         </div>
-        <ProfileJobTitleComponent jobTitle={jobTitle} />
         <ProfileNameComponent name={name} />
+        <ProfileJobTitleComponent jobTitle={jobTitle} />
         <ProfileResidenceComponent residence={residence} />
         <ProfileDescriptionComponent description={description} />
       </div>

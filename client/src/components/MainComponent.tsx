@@ -1,21 +1,49 @@
+import { gql, useQuery } from "@apollo/client";
 import { ProfileComponent, ProfileComponentProps } from "./ProfileComponent";
 
-export interface MainComponentProps {
-  profile: ProfileComponentProps;
+interface Profile {
+  imgSrc: string;
+  name: string;
+  residence: string;
+  jobTitle: string;
+  description: string;
 }
 
-export const MainComponent = ({ profile }: MainComponentProps): JSX.Element => {
-  return (
-    <main>
-      <div style={{ width: "780px", margin: "0 auto" }}>
-        <ProfileComponent
-          imgSrc={profile.imgSrc}
-          jobTitle={profile.jobTitle}
-          name={profile.name}
-          residence={profile.residence}
-          description={profile.description}
-        />
-      </div>
-    </main>
-  );
+interface QueryData {
+  me: Profile;
+}
+
+export const MainComponent = (): JSX.Element => {
+  const { loading, error, data } = useQuery<QueryData>(gql`
+    {
+      me {
+        imgSrc
+        name
+        residence
+        jobTitle
+        description
+      }
+    }
+  `);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+  if (!data) {
+    return <p>Empty data</p>;
+  } else {
+    console.log("non empty data", data);
+    return (
+      <main>
+        <div style={{ width: "780px", margin: "0 auto" }}>
+          <ProfileComponent
+            imgSrc={data.me.imgSrc}
+            name={data.me.name}
+            jobTitle={data.me.jobTitle}
+            residence={data.me.residence}
+            description={data.me.description}
+          />
+        </div>
+      </main>
+    );
+  }
 };
