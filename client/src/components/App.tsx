@@ -1,5 +1,6 @@
-import { ProfileComponent, ProfileComponentProps } from "./ProfileComponent";
+import { MainComponent } from "./MainComponent";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import { ProfileComponentProps } from "./ProfileComponent";
 
 const client = new ApolloClient({
   uri: "http://localhost:4000",
@@ -17,17 +18,7 @@ export const App = (): JSX.Element => {
   };
   return (
     <ApolloProvider client={client}>
-      <main>
-        <div style={{ width: "780px", margin: "0 auto" }}>
-          <ProfileComponent
-            imgSrc={profile.imgSrc}
-            jobTitle={profile.jobTitle}
-            name={profile.name}
-            residence={profile.residence}
-            description={profile.description}
-          />
-        </div>
-      </main>
+      <MainComponent profile={profile} />
     </ApolloProvider>
   );
 };
