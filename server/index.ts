@@ -1,17 +1,8 @@
 import { ApolloServer, gql } from "apollo-server";
+import * as fs from "fs";
 
 const typeDefs = gql`
-  type Query {
-    me: Profile
-  }
-
-  type Profile {
-    imgSrc: String
-    name: String
-    residence: String
-    jobTitle: String
-    description: String
-  }
+  ${fs.readFileSync(__dirname.concat("/schema.gql"), "utf8")}
 `;
 
 interface Profile {
@@ -22,17 +13,14 @@ interface Profile {
   description: string;
 }
 
+interface Query {
+  me: Profile;
+}
+
 const resolvers = {
   Query: {
     me(parent: any, args: any, context: any, info: any): Profile {
-      return {
-        imgSrc: "http://localhost:8080/images/profile.jpg",
-        name: "リチャード 伊真岡",
-        jobTitle: "中堅エンジニア",
-        residence: "東京都 南アザラシ区 ペンギン町",
-        description:
-          "中堅エンジニアのリチャード・伊真岡です。金融関連の会社の社内IT部門にて9年勤めたあと、3年ほどベンチャー企業を転々とし、いまは広告関連の会社でエンジニアをやっています。",
-      };
+      return context.data.me;
     },
   },
 };
@@ -40,6 +28,18 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  context: async ({ req }: any) => {
+    try {
+      const jsonDataFile = __dirname.concat("/data.json");
+      const fileContent = await fs.promises.readFile(jsonDataFile, "utf8");
+      const jsonData = JSON.parse(fileContent);
+      return { data: jsonData };
+    } catch (err) {
+      console.log("***ERROR OCURRED***");
+      console.log(err);
+      throw new Error("internal error happened!!");
+    }
+  },
 });
 
 // The `listen` method launches a web server.
