@@ -11,7 +11,7 @@ export const App = (): JSX.Element => {
   };
   return (
     <main>
-      <div style={{ width: "780px" }}>
+      <div style={{ width: "780px", margin: "0 auto" }}>
         <ProfileComponent
           imgSrc={profile.imgSrc}
           jobTitle={profile.jobTitle}

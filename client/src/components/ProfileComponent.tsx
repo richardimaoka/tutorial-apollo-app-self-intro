@@ -38,12 +38,12 @@ export const ProfileComponent = ({
             marginTop: "-120px",
           }}
         >
-          <ProfileImageComponent src="http://localhost:8080/images/profile.jpg" />
+          <ProfileImageComponent src={imgSrc} />
         </div>
-        <ProfileJobTitleComponent jobTitle="中堅エンジニア" />
-        <ProfileNameComponent name="リチャード 伊真岡" />
-        <ProfileResidenceComponent residence="東京都 南アザラシ区 ペンギン町" />
-        <ProfileDescriptionComponent description="中堅エンジニアのリチャード・伊真岡です。金融関連の会社の社内IT部門にて9年勤めたあと、3年ほどベンチャー企業を転々とし、いまは広告関連の会社でエンジニアをやっています。" />
+        <ProfileJobTitleComponent jobTitle={jobTitle} />
+        <ProfileNameComponent name={name} />
+        <ProfileResidenceComponent residence={residence} />
+        <ProfileDescriptionComponent description={description} />
       </div>
     </div>
   );
