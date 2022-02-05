@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div>
+    <main>
       <div style={{ width: "780px" }}>
         <div style={{ position: "relative" }}>
           <div
@@ -24,8 +24,6 @@ function App() {
             style={{
               position: "relative",
               marginTop: "-120px",
-              width: "160px",
-              height: "160px",
             }}
           >
             <img
@@ -47,7 +45,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
