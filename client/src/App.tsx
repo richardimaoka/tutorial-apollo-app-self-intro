@@ -1,3 +1,5 @@
+import { ProfileImageComponent } from "./ProfileImageComponent";
+
 export const App = (): JSX.Element => {
   return (
     <main>
@@ -26,12 +28,7 @@ export const App = (): JSX.Element => {
               marginTop: "-120px",
             }}
           >
-            <img
-              width="160px"
-              height="160px"
-              style={{ borderRadius: "50%" }}
-              src="http://localhost:8080/images/profile.jpg"
-            />
+            <ProfileImageComponent src="http://localhost:8080/images/profile.jpg" />
           </div>
           <div style={{ fontSize: "24px", fontWeight: "bold" }}>
             リチャード 伊真岡
