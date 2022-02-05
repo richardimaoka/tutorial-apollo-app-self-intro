@@ -1,4 +1,7 @@
+import { ProfileDescriptionComponent } from "./ProfileDescriptionComponent";
 import { ProfileImageComponent } from "./ProfileImageComponent";
+import { ProfileNameComponent } from "./ProfileNameComponent";
+import { ProfileResidenceComponent } from "./ProfileResidenceComponent";
 
 export const App = (): JSX.Element => {
   return (
@@ -30,16 +33,10 @@ export const App = (): JSX.Element => {
           >
             <ProfileImageComponent src="http://localhost:8080/images/profile.jpg" />
           </div>
-          <div style={{ fontSize: "24px", fontWeight: "bold" }}>
-            リチャード 伊真岡
-          </div>
           <div>中堅エンジニア</div>
-          <div style={{ color: "#777777", marginBottom: "10px" }}>
-            熊本県 キャリフォルニア市
-          </div>
-          <div>
-            中堅エンジニアのリチャード・伊真岡です。金融関連の会社の社内IT部門にて9年勤めたあと、3年ほどベンチャー企業を転々とし、いまは広告関連の会社でエンジニアをやっています。
-          </div>
+          <ProfileNameComponent name="リチャード 伊真岡" />
+          <ProfileResidenceComponent residence="東京都 南アザラシ区 ペンギン町" />
+          <ProfileDescriptionComponent description="中堅エンジニアのリチャード・伊真岡です。金融関連の会社の社内IT部門にて9年勤めたあと、3年ほどベンチャー企業を転々とし、いまは広告関連の会社でエンジニアをやっています。" />
         </div>
       </div>
     </main>
