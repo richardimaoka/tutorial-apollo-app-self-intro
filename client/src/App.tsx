@@ -1,4 +1,4 @@
-function App() {
+export const App = (): JSX.Element => {
   return (
     <main>
       <div style={{ width: "780px" }}>
@@ -47,6 +47,4 @@ function App() {
       </div>
     </main>
   );
-}
-
-export default App;
+};
