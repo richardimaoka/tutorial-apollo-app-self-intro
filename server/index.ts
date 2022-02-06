@@ -13,9 +13,27 @@ interface Profile {
   description: string;
 }
 
+async function init() {
+  console.log(1);
+  await sleep(1000);
+  console.log(2);
+}
+
+function sleep(ms: number) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
+
 const resolvers = {
   Query: {
-    me(parent: any, args: any, context: any, info: any): Profile {
+    me: async (
+      parent: any,
+      args: any,
+      context: any,
+      info: any
+    ): Promise<Profile> => {
+      await sleep(3000);
       return context.data.me;
     },
   },

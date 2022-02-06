@@ -1,5 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
-import { ProfileComponent, ProfileComponentProps } from "./ProfileComponent";
+import { ProfileComponent } from "./ProfileComponent";
+import { LoadingSpinnerComponent } from "./LoadingSpinnerComponent";
 
 interface Profile {
   imgSrc: string;
@@ -26,7 +27,9 @@ export const MainComponent = (): JSX.Element => {
     }
   `);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) {
+    return <LoadingSpinnerComponent />;
+  }
   if (error) return <p>Error :(</p>;
   if (!data) {
     return <p>Empty data</p>;
