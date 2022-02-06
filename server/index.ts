@@ -33,7 +33,7 @@ const resolvers = {
       context: any,
       info: any
     ): Promise<Profile> => {
-      await sleep(3000);
+      await sleep(1000);
       return context.data.me;
     },
   },
