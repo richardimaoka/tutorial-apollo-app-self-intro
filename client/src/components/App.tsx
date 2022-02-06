@@ -1,6 +1,5 @@
 import { MainComponent } from "./MainComponent";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
-import { ProfileComponentProps } from "./ProfileComponent";
 
 const client = new ApolloClient({
   uri: "http://localhost:4000",

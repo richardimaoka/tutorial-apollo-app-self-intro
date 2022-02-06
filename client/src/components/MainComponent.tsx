@@ -15,7 +15,7 @@ interface QueryData {
   me: Profile;
 }
 
-export const MainComponent = (): JSX.Element => {
+const InnerComponent = (): JSX.Element => {
   const { loading, error, data } = useQuery<QueryData>(gql`
     {
       me {
@@ -23,43 +23,38 @@ export const MainComponent = (): JSX.Element => {
         name
         residence
         jobTitle
-        descriptions
-      }
+        descriptiosn
+     
     }
   `);
 
   if (loading) {
-    return (
-      <div style={{ width: "780px", margin: "0 auto" }}>
-        <LoadingSpinnerComponent />
-      </div>
-    );
+    return <LoadingSpinnerComponent />;
   } else if (error) {
-    return (
-      <div style={{ width: "780px", margin: "0 auto" }}>
-        <ErrorComponent errorMessage={error.message} />
-      </div>
-    );
+    return <ErrorComponent errorMessage={error.message} />;
   } else if (!data) {
     return (
-      <div style={{ width: "780px", margin: "0 auto" }}>
-        <ErrorComponent errorMessage={"サーバーから空データが取得されました"} />
-      </div>
+      <ErrorComponent errorMessage={"サーバーから空データが取得されました"} />
     );
   } else {
-    console.log("non empty data", data);
     return (
-      <main>
-        <div style={{ width: "780px", margin: "0 auto" }}>
-          <ProfileComponent
-            imgSrc={data.me.imgSrc}
-            name={data.me.name}
-            jobTitle={data.me.jobTitle}
-            residence={data.me.residence}
-            description={data.me.description}
-          />
-        </div>
-      </main>
+      <ProfileComponent
+        imgSrc={data.me.imgSrc}
+        name={data.me.name}
+        jobTitle={data.me.jobTitle}
+        residence={data.me.residence}
+        description={data.me.description}
+      />
     );
   }
+};
+
+export const MainComponent = (): JSX.Element => {
+  return (
+    <main>
+      <div style={{ width: "780px", margin: "0 auto" }}>
+        <InnerComponent />
+      </div>
+    </main>
+  );
 };
