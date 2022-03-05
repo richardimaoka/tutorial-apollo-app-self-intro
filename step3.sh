@@ -1,7 +1,7 @@
 #!/bin/sh
 
 rm -f index.html
-cp -r answers/client1 client
+cp -r answers/client client
 cd client
 npm install
 npm run start
