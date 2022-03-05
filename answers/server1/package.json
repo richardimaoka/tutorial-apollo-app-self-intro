@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "ts-node-dev --respawn index.ts"
+  },
   "dependencies": {
     "apollo-server": "^3.6.2",
     "graphql": "^16.3.0"

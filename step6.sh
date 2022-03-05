@@ -2,5 +2,9 @@
 
 # ## GraphQLサーバー
 
-cp -r answers/client2/src client
-rm -f client/src/App.tsx
+cp -r answers/server1 server
+cd server
+
+npm install
+
+npm run start
