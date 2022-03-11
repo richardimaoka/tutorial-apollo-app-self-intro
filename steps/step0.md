@@ -9,6 +9,10 @@ GraphQL を学びたい JavaScript 初心者へ向けてチュートリアルを
 - [コピペで素早く学ぶ GraphQL、Apollo Server Getting Started](https://qiita.com/RichardImaokaJP/items/ca32e73f922673bc95a5)
 - [コピペで素早く学ぶ GraphQL、Apollo Server Getting Resolver](https://qiita.com/RichardImaokaJP/items/2abd1a4200c6dbe45ee6)
 
+## 事前準備
+
+node と npm がインストール済みであることを確認して下さい。
+
 ## git レポジトリのクローン
 
 :large_orange_diamond: Action: ターミナルで以下の一連のコマンドを実行してください
