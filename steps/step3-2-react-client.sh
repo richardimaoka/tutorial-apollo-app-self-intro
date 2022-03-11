@@ -14,7 +14,7 @@ npm install
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 # ```terminal: Reactクライアント (ターミナル)
-npx npm-check-updates
+# npx npm-check-updates
 # ```
 
 # :white_check_mark: Result: 以下のように表示されればOKです。
