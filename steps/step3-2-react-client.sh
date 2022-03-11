@@ -37,7 +37,7 @@ npx npm-check-updates
 # :large_orange_diamond: Action: 上記メッセージの通り、以下のコマンドを実行してください
 
 # ```terminal: Reactクライアント (ターミナル)
-npx ncu -u
+# npx ncu -u
 # ```
 
 # これで、最新バージョンのnpmパッケージ群がインストールされます。
@@ -48,9 +48,9 @@ npx ncu -u
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: Reactクライアント (ターミナル)
+# ```terminal: Reactクライアント (ターミナル)
 npm run start
-```
+# ```
 
 # :white_check_mark: Result: http://localhost:3000/ で以下のページが表示されます。
 
@@ -62,9 +62,9 @@ npm run start
 
 # https://create-react-app.dev/docs/getting-started にあるとおり、以下のコマンドを実行すれば、Reactのサンプルアプリケーションが生成されます。
 
-```
-npx create-react-app client --template typescript
-```
+# ```
+# npx create-react-app client --template typescript
+# ```
 
 # ここまでの手順で作成したclientディレクトリの中には、上記のコマンドで生成したアプリケーションから、このチュートリアルで利用しない部分を取り除いて、ソースコードを単純化したものです。
 
