@@ -2,12 +2,6 @@
 
 # ## GraphQLサーバーでProfileオブジェクトを返す
 
-# :large_orange_diamond: Action: 先程のApollo Studio Explorerの画面から"Query your server"ボタンを押してください
-
-# :white_check_mark: Result: 以下のような画面に遷移します。
-
-# ![2022-03-06_09h04_06.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/e32d47ea-e138-8beb-acec-1441174f7e11.png)
-
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 # ```terminal: メイン (ターミナル)
@@ -58,21 +52,8 @@ cp answers/server2/* server
 
 # </div></details>
 
-# :large_orange_diamond: Action: 以下のクエリをApollo Studio Explorerの画面に貼り付けて、"Run"ボタンを押してください
-
-# ```
-# {
-#   me {
-#     name
-#     residence
-#     imgSrc
-#     jobTitle
-#     description
-#   }
-# }
-# ```
+# :large_orange_diamond: Action: 再び先程のクエリをApollo Studio Explorerの画面から実行してください。
 
 # :white_check_mark: Result: 以下のように表示されればOKです。
 
-# ![2022-03-06_21h11_55.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/4e21aea3-c7a7-321e-2c85-dd8fdc39d024.png)
-
+# ![2022-03-12_00h48_17.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/5557c9eb-cde6-6d3b-a53b-621306cbdcb2.png)
