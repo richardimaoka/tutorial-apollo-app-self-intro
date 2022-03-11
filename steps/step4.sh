@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# ## React環境のセットアップ
-cp -r answers/client1 client
-cd client
-npm install
-
-rm -f index.html
-
-npm run start
+# ## Reactのみでサンプル完成時の見た目を再現
+cp -r answers/client2/src client
+rm -f client/src/App.tsx

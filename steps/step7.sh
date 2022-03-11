@@ -2,6 +2,4 @@
 
 # ## GraphQLサーバー
 
-cp answers/server2/* server
-
-npm run start
+cp answers/client3/* client

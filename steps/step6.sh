@@ -2,9 +2,6 @@
 
 # ## GraphQLサーバー
 
-cp -r answers/server1 server
-cd server
-
-npm install
+cp answers/server2/* server
 
 npm run start

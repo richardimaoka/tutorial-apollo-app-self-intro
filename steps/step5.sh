@@ -1,5 +1,10 @@
 #!/bin/sh
 
-# ## Reactのみでサンプル完成時の見た目を再現
-cp -r answers/client2/src client
-rm -f client/src/App.tsx
+# ## GraphQLサーバー
+
+cp -r answers/server1 server
+cd server
+
+npm install
+
+npm run start
