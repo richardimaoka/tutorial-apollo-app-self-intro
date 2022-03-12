@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# ![2022-03-05_19h09_43.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/e9cde174-5eb0-79b7-c2b6-684d8ecac4a6.png)
-
 # :large_orange_diamond: Action: ファイルサーバーは走らせたまま、メインのターミナルで以下の一連のコマンドを実行してください
 
 # ```terminal: メイン (ターミナル)

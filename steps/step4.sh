@@ -2,7 +2,7 @@
 
 # ## Reactのみでサンプル完成時の見た目を構築
 
-# 次にReactのみで、GraphQLサーバーサイドを準備せず、サンプル完成時の見た目を構築しましょう。
+# 次にクライアントサイドのReactのみで、GraphQLサーバーサイドを準備せず、サンプル完成時の見た目を構築しましょう。
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
@@ -19,7 +19,7 @@ rm -f client/src/App.tsx
 
 # <details><summary>Reactサンプルのソースコード解説</summary><div>
 
-# `client/src/components/MainComponent.tsx` を見ると、Reactのコンポーネント内に定義した `profile` を、
+# `client/src/components/MainComponent.tsx` を見ると、Reactのコンポーネント内に定義した以下の `profile` を、
 
 # ```ts
 # const profile = {
@@ -44,7 +44,7 @@ rm -f client/src/App.tsx
 # />
 # ```
 
-# 以下では、このReactのコンポーネント内に定義した `profile` の代わりに、GraphQLサーバーから取得した `Profile` 型オブジェクトを利用するようにしましょう。
+# ここから先は、このReactのコンポーネント内に定義した `profile` の代わりに、GraphQLサーバーから取得した `Profile` 型オブジェクトを利用するようにしましょう。
 
 # ---
 

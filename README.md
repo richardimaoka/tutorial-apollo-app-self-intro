@@ -73,8 +73,6 @@ npm run start
 ![2022-03-05_19h09_43.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/e9cde174-5eb0-79b7-c2b6-684d8ecac4a6.png)
 
 
-![2022-03-05_19h09_43.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/e9cde174-5eb0-79b7-c2b6-684d8ecac4a6.png)
-
 :large_orange_diamond: Action: ファイルサーバーは走らせたまま、メインのターミナルで以下の一連のコマンドを実行してください
 
 ```terminal: メイン (ターミナル)
@@ -99,7 +97,9 @@ rm -f index.html
 ```
 
 
-:large_orange_diamond: Action: 新たなターミナルで、以下の一連のコマンドを実行してください
+:large_orange_diamond: Action: 新たなターミナルを立ち上げてください
+
+:large_orange_diamond: Action: 以下の一連のコマンドを実行してください
 
 ```terminal: Reactクライアント (ターミナル)
 cp -r answers/client1 client
@@ -173,7 +173,7 @@ npx create-react-app client --template typescript
 
 ## Reactのみでサンプル完成時の見た目を構築
 
-次にReactのみで、GraphQLサーバーサイドを準備せず、サンプル完成時の見た目を構築しましょう。
+次にクライアントサイドのReactのみで、GraphQLサーバーサイドを準備せず、サンプル完成時の見た目を構築しましょう。
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
@@ -190,7 +190,7 @@ rm -f client/src/App.tsx
 
 <details><summary>Reactサンプルのソースコード解説</summary><div>
 
-`client/src/components/MainComponent.tsx` を見ると、Reactのコンポーネント内に定義した `profile` を、
+`client/src/components/MainComponent.tsx` を見ると、Reactのコンポーネント内に定義した以下の `profile` を、
 
 ```ts
 const profile = {
@@ -215,7 +215,7 @@ const profile = {
 />
 ```
 
-以下では、このReactのコンポーネント内に定義した `profile` の代わりに、GraphQLサーバーから取得した `Profile` 型オブジェクトを利用するようにしましょう。
+ここから先は、このReactのコンポーネント内に定義した `profile` の代わりに、GraphQLサーバーから取得した `Profile` 型オブジェクトを利用するようにしましょう。
 
 ---
 
@@ -329,11 +329,28 @@ const jsonDataFile = __dirname.concat("/data.json");
 
 ## Reactクライアントで、GraphQLサーバーから取得したレスポンスを使う
 
+:large_orange_diamond: Action: Ctrl+CでReactクライアントのターミナルを停止してください。
+
+:large_orange_diamond: Action: 以下のコマンドを実行してください
+
+```terminal: Reactクライアント (ターミナル)
+cp -r answers/client3/* client
+cd client
+npm install
+```
+
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 ```terminal: メイン (ターミナル)
-cp answers/client3/* client
+npm start
 ```
+
+<details><summary>ソースコードの解説</summary><div>
+
+---
+
+</div></details>
+
 
 ## Bonus: エラーハンドリングを入れてみる
 

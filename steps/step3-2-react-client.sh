@@ -1,6 +1,8 @@
 # #!/bin/sh
 
-# :large_orange_diamond: Action: 新たなターミナルで、以下の一連のコマンドを実行してください
+# :large_orange_diamond: Action: 新たなターミナルを立ち上げてください
+
+# :large_orange_diamond: Action: 以下の一連のコマンドを実行してください
 
 # ```terminal: Reactクライアント (ターミナル)
 cp -r answers/client1 client
