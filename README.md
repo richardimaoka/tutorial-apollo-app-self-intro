@@ -329,21 +329,31 @@ const jsonDataFile = __dirname.concat("/data.json");
 
 ## Reactクライアントで、GraphQLサーバーから取得したレスポンスを使う
 
+:large_orange_diamond: Action: 以下のコマンドを実行してください
+
+```terminal: メイン (ターミナル)
+cp -r answers/client3/* client
+```
+
 :large_orange_diamond: Action: Ctrl+CでReactクライアントのターミナルを停止してください。
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 ```terminal: Reactクライアント (ターミナル)
-cp -r answers/client3/* client
-cd client
 npm install
 ```
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: Reactクライアント (ターミナル)
 npm start
 ```
+
+:large_orange_diamond: Action: http://localhost:3000 にアクセスしてください
+
+:white_check_mark: Result: で以下のように表示されればOKです。
+
+![2022-03-06_00h58_13.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/5d7838cf-7363-dd60-f202-b298122165bf.png)
 
 <details><summary>ソースコードの解説</summary><div>
 
@@ -354,3 +364,22 @@ npm start
 
 ## Bonus: エラーハンドリングを入れてみる
 
+## まとめ
+
+GraphQL サーバーと React クライアントを組み合わせて、アプリケーションを構成する手順を紹介しました。
+
+Web ページ一枚分の非常に簡素な構成ですが、サーバーサイドとクライアントサイドでどうやって GraphQL の設定を行えばいいかのお手本になります。
+
+ここから機能を増やしていくための骨組みとして、使ってみてください。
+
+## 次のチュートリアル
+
+コピペで素早く学ぶ GraphQL: サンプル「社員名簿 Web ページ」(準備中)
+
+## 参考資料
+
+- Apollo Basics 公式 https://www.apollographql.com/docs/
+- Apollo Server 公式 https://www.apollographql.com/docs/apollo-server/
+- Node.js http-server https://github.com/http-party/http-server
+- GraphQL 公式 https://graphql.org/
+- How to GraphQL https://www.howtographql.com/
