@@ -5,7 +5,7 @@
 # :large_orange_diamond: Action: 別のターミナルを立ち上げ、以下のコマンドを実行してください
 
 # ```terminal: ファイルサーバー (ターミナル)
-cp -r answers/file-server file-server
+cp -r answers/step1-file-server file-server
 cd file-server
 npm install
 # ```

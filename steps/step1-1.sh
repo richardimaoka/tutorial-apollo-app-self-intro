@@ -7,8 +7,8 @@
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 # ```terminal: メイン (ターミナル)
-cp answers/html/index1.html index.html
-cp answers/html/profile.png profile.png
+cp answers/step1-html/index1.html index.html
+cp answers/step1-html/profile.png profile.png
 # ```
 
 # :large_orange_diamond: Action: ブラウザから`index.html`を開いてください。
