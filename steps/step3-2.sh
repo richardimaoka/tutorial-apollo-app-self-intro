@@ -5,7 +5,7 @@
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 # ```terminal: メイン (ターミナル)
-cp answers/server2/* server
+cp answers/step3-server2/* server
 # ```
 
 # <details><summary>ソースコードの解説</summary>
