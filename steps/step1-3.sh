@@ -3,7 +3,7 @@
 # :large_orange_diamond: Action: ファイルサーバーは走らせたまま、メインのターミナルで以下のコマンドを実行してください
 
 # ```terminal: メイン (ターミナル)
-cp answers/html/index2.html index.html
+cp answers/step1-html/index2.html index.html
 rm profile.png
 # ```
 

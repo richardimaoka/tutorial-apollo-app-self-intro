@@ -7,7 +7,7 @@
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 # ```terminal: メイン (ターミナル)
-cp -r answers/client2/src client
+cp -r answers/step2-client2/src client
 rm -f client/src/App.tsx
 # ```
 

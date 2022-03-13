@@ -5,7 +5,7 @@
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 # ```terminal: Reactクライアント (ターミナル)
-cp -r answers/client1 client
+cp -r answers/step2-client1 client
 cd client
 npm install
 # ```
