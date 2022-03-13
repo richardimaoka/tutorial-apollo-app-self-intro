@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# ## HTMLでサンプル完成時の見た目を確認
+# ## 1. HTMLでサンプル完成時の見た目を確認
 
 # 後ほどReactを使って実装し直しますが、まずはHTMLでサンプル完成時の見た目確認しましょう。
 
-# :large_orange_diamond: Action: 以下の一連のコマンドを実行してください
+# :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 # ```terminal: メイン (ターミナル)
 cp answers/html/index1.html index.html

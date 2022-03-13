@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# :large_orange_diamond: Action: ファイルサーバーは走らせたまま、メインのターミナルで以下の一連のコマンドを実行してください
+# :large_orange_diamond: Action: ファイルサーバーは走らせたまま、メインのターミナルで以下のコマンドを実行してください
 
 # ```terminal: メイン (ターミナル)
 cp answers/html/index2.html index.html

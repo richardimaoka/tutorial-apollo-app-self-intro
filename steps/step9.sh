@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# ## GraphQLサーバー立ち上げ
+# ## 9. GraphQLサーバー立ち上げ
 
-# :large_orange_diamond: Action: 新たなターミナルで、以下の一連のコマンドを実行してください
+# :large_orange_diamond: Action: 新たなターミナルで、以下のコマンドを実行してください
 
 # ```terminal: GraphQLサーバー (ターミナル)
 cp -r answers/server1 server

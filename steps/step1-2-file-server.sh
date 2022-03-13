@@ -1,8 +1,8 @@
 #!/bin/sh
 
-## プロフィール画像をローカルのファイルサーバーから取得
+# ### プロフィール画像をローカルのファイルサーバーから取得
 
-# :large_orange_diamond: Action: 別のターミナルを立ち上げ、以下の一連のコマンドを実行してください
+# :large_orange_diamond: Action: 別のターミナルを立ち上げ、以下のコマンドを実行してください
 
 # ```terminal: ファイルサーバー (ターミナル)
 cp -r answers/file-server file-server

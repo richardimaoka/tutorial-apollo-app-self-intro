@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# ## GraphQLサーバーでProfileオブジェクトを返す
+# ### GraphQLサーバーでProfileオブジェクトを返す
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-## Reactクライアントで、GraphQLサーバーから取得したレスポンスを使う
+## 4. Reactクライアントで、GraphQLサーバーから取得したレスポンスを使う
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
