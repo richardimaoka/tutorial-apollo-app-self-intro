@@ -16,7 +16,7 @@ npm install
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 # ```terminal: Reactクライアント (ターミナル)
-# npx npm-check-updates
+npx npm-check-updates
 # ```
 
 # :white_check_mark: Result: 以下のように表示されればOKです。
@@ -39,7 +39,7 @@ npm install
 # :large_orange_diamond: Action: 上記メッセージの通り、以下のコマンドを実行してください
 
 # ```terminal: Reactクライアント (ターミナル)
-# npx ncu -u
+npx ncu -u
 # ```
 
 # これで、最新バージョンのnpmパッケージ群がインストールされます。

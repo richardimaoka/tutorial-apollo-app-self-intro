@@ -31,8 +31,8 @@ cd tutorial-apollo-app-self-intro
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 ```terminal: メイン (ターミナル)
-cp answers/html/index1.html index.html
-cp answers/html/profile.png profile.png
+cp answers/step1-html/index1.html index.html
+cp answers/step1-html/profile.png profile.png
 ```
 
 :large_orange_diamond: Action: ブラウザから`index.html`を開いてください。
@@ -57,7 +57,7 @@ cp answers/html/profile.png profile.png
 :large_orange_diamond: Action: 別のターミナルを立ち上げ、以下のコマンドを実行してください
 
 ```terminal: ファイルサーバー (ターミナル)
-cp -r answers/file-server file-server
+cp -r answers/step1-file-server file-server
 cd file-server
 npm install
 ```
@@ -76,7 +76,7 @@ npm run start
 :large_orange_diamond: Action: ファイルサーバーは走らせたまま、メインのターミナルで以下のコマンドを実行してください
 
 ```terminal: メイン (ターミナル)
-cp answers/html/index2.html index.html
+cp answers/step1-html/index2.html index.html
 rm profile.png
 ```
 
@@ -102,7 +102,7 @@ rm -f index.html
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 ```terminal: Reactクライアント (ターミナル)
-cp -r answers/client1 client
+cp -r answers/step2-client1 client
 cd client
 npm install
 ```
@@ -178,7 +178,7 @@ npx create-react-app client --template typescript
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 ```terminal: メイン (ターミナル)
-cp -r answers/client2/src client
+cp -r answers/step2-client2/src client
 rm -f client/src/App.tsx
 ```
 
@@ -226,7 +226,7 @@ const profile = {
 :large_orange_diamond: Action: 新たなターミナルで、以下のコマンドを実行してください
 
 ```terminal: GraphQLサーバー (ターミナル)
-cp -r answers/server1 server
+cp -r answers/step3-server1 server
 cd server
 npm install
 ```
@@ -274,7 +274,7 @@ npm run start
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 ```terminal: メイン (ターミナル)
-cp answers/server2/* server
+cp answers/step3-server2/* server
 ```
 
 <details><summary>ソースコードの解説</summary>
@@ -327,86 +327,12 @@ const jsonDataFile = __dirname.concat("/data.json");
 
 ![2022-03-12_00h48_17.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/5557c9eb-cde6-6d3b-a53b-621306cbdcb2.png)
 
-:large_orange_diamond: Action: 新たなターミナルを立ち上げてください
-
-:large_orange_diamond: Action: 以下のコマンドを実行してください
-
-```terminal: Reactクライアント (ターミナル)
-cp -r answers/client1 client
-cd client
-npm install
-```
-
-<details><summary>npmのDependenciesが最新であることを確認する</summary>
-
-<div>
-:large_orange_diamond: Action: 以下のコマンドを実行してください
-
-```terminal: Reactクライアント (ターミナル)
-npx npm-check-updates
-```
-
-:white_check_mark: Result: 以下のように表示されればOKです。
-
-```
-All dependencies match the latest package versions :)
-```
-
-`package.json`の`Dependencies`に指定されたnpmパッケージ群の、最新バージョンがすでにインストールされています。
-
-`All dependencies match the latest package versions :)` ではなく、以下のように表示された場合はどうすればよいでしょう？
-
-```
- apollo-server   ^3.6.0  →   ^3.6.2     
- graphql        ^16.1.0  →  ^16.3.0    
-
-Run ncu -u to upgrade package.json
-```
-
-:large_orange_diamond: Action: 上記メッセージの通り、以下のコマンドを実行してください
-
-```terminal: Reactクライアント (ターミナル)
-npx ncu -u
-```
-
-これで、最新バージョンのnpmパッケージ群がインストールされます。
-
-- - -
-
-</div></details>
-
-:large_orange_diamond: Action: 以下のコマンドを実行してください
-
-```terminal: Reactクライアント (ターミナル)
-npm run start
-```
-
-:white_check_mark: Result: http://localhost:3000/ で以下のページが表示されます。
-
-![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/cfcd14ae-4ae7-d92a-d806-ab8b930cf070.png)
-
-<details><summary>これは<a href="https://create-react-app.dev/">create-react-app</a>で生成したReactアプリケーションを単純化したものです</summary>
-
-<div>
-
-https://create-react-app.dev/docs/getting-started にあるとおり、以下のコマンドを実行すれば、Reactのサンプルアプリケーションが生成されます。
-
-```
-npx create-react-app client --template typescript
-```
-
-ここまでの手順で作成したclientディレクトリの中には、上記のコマンドで生成したアプリケーションから、このチュートリアルで利用しない部分を取り除いて、ソースコードを単純化したものです。
-
-- - -
-
-</div></details>
-
 ## 4. Reactクライアントで、GraphQLサーバーから取得したレスポンスを使う
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
 ```terminal: メイン (ターミナル)
-cp -r answers/client3/* client
+cp -r answers/step4-client1/* client
 ```
 
 :large_orange_diamond: Action: Ctrl+CでReactクライアントのターミナルを停止してください。
