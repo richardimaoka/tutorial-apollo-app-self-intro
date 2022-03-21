@@ -9,6 +9,7 @@ cd ../ || exit               # REMOVE THIS IN aggregate.sh - cd to the git repos
 
 # ```terminal: ファイルサーバー (ターミナル)
 cp -r answers/step1-file-server file-server
+# shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh 
 cd file-server
 npm install
 # ```
