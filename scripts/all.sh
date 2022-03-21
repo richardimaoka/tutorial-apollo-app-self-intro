@@ -1,7 +1,8 @@
 #!/bin/sh
 
 cd "$(dirname "$0")" || exit
-
+cd ../steps || exit
+ 
 ./cleanup.sh
 ./step1-1.sh
 ./step1-2-file-server.sh &

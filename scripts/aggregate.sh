@@ -1,7 +1,9 @@
 #!/bin/sh
 
 cd "$(dirname "$0")" || exit
+cd ../steps || exit
 
+# shellcheck disable=SC2010
 ls step* \
   | grep -v "test" \
   | xargs cat \
