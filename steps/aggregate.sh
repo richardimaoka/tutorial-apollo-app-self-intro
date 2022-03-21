@@ -1,8 +1,9 @@
 #!/bin/sh
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit
 
-ls | grep step \
+ls step* \
+  | grep -v "test" \
   | xargs cat \
   | grep -v '#!/bin/sh' \
   | grep -v 'REMOVE THIS IN aggregate.sh' \

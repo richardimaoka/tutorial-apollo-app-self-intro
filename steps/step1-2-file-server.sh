@@ -1,7 +1,7 @@
 #!/bin/sh
 
-cd "$(dirname "$0")" # REMOVE THIS IN aggregate.sh 
-cd ../               # REMOVE THIS IN aggregate.sh - cd to the git repository root
+cd "$(dirname "$0")" || exit # REMOVE THIS IN aggregate.sh 
+cd ../ || exit               # REMOVE THIS IN aggregate.sh - cd to the git repository root
 
 # ### プロフィール画像をローカルのファイルサーバーから取得
 
