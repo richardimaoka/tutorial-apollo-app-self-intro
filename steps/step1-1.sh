@@ -1,5 +1,8 @@
 #!/bin/sh
 
+cd "$(dirname "$0")" # REMOVE THIS IN aggregate.sh 
+cd ../               # REMOVE THIS IN aggregate.sh - cd to the git repository root
+
 # ## 1. HTMLでサンプル完成時の見た目を確認
 
 # 後ほどReactを使って実装し直しますが、まずはHTMLでサンプル完成時の見た目確認しましょう。

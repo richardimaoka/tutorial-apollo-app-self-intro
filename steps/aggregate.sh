@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 ls | grep step \
   | xargs cat \
   | grep -v '#!/bin/sh' \
-  | grep -v '# remove this in README' \
+  | grep -v 'REMOVE THIS IN aggregate.sh' \
   | sed 's/^\#\s//' \
   > README.md
 

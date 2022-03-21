@@ -1,5 +1,8 @@
 #!/bin/sh
 
+cd "$(dirname "$0")" # REMOVE THIS IN aggregate.sh 
+cd ../               # REMOVE THIS IN aggregate.sh - cd to the git repository root
+
 # ### プロフィール画像をローカルのファイルサーバーから取得
 
 # :large_orange_diamond: Action: 別のターミナルを立ち上げ、以下のコマンドを実行してください
