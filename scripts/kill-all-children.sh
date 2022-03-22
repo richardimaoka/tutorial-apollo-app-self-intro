@@ -10,17 +10,34 @@ then
   exit 1
 fi
 
-CHILD_PID=$(./child-pid-of.sh $1)
+# recursively find the child process IDs into an array, until the leaf child
+#   PID  PPID CMD
+#   111   011 current-process             <- stored as child_pid_[0]
+#   112   111  \ - child-process          <- stored as child_pid_[1]
+#   113   112    \ - grand-child-process  <- stored as child_pid_[2]
+#   114   113      \ - leaf-child-process <- stored as child_pid_[3]
+CHILD_PID="$1"
 i=0
 while [ -n "$CHILD_PID" ]
 do
-  # store the child pid to child_pid_i array
+  # store the child process ID to the array
   eval child_pid_$i="$CHILD_PID"
   i=$((i+1))
+
+  # find the next child process ID
   CHILD_PID=$(./child-pid-of.sh "$CHILD_PID")
 done
 
-echo "$child_pid_0"
-echo "$child_pid_1"
-echo "$child_pid_2"
-echo "$child_pid_3"
+# at this point:
+#   -  child_pid_[i]   = empty
+#   -  child_pid_[i-1] = leaf child
+# so, the below makes 
+#      child_pid_[i]   = leaf child
+i=$((i-1))
+
+# then kill all children in the reverse order, from the leaf child, to the current process
+while [ "$i" -ge 0 ]
+do
+  eval kill \$child_pid_"$i"
+  i=$((i-1))
+done
