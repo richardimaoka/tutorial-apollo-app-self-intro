@@ -4,16 +4,19 @@ cd "$(dirname "$0")" || exit
 cd ../ || exit # cd to the git repository root
 
 EXIT_STATUS=0
+CURRENT_FILE=$(basename "$0")
 
+# test 1: if index.html does not exist, then fail
 if [ ! -f "index.html" ]
 then
-  echo "index.html not found after step 1"
+  echo "FAILED ($CURRENT_FILE): index.html not found" 1>&2
   EXIT_STATUS=1
 fi
 
-if [ ! -f "profile.png" ]
+# test 2: if profile.png still exists, then fail
+if [ -f "profile.png" ]
 then
-  echo "profile.png not found after step 1"
+  echo "FAILED ($CURRENT_FILE): profile.png still exists" 1>&2
   EXIT_STATUS=1
 fi
 
