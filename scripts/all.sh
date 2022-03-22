@@ -6,17 +6,14 @@ CURRENT_FILE=$(basename "$0")
 cd "$(dirname "$0")" || exit
 ./cleanup.sh
 
+cd ../ || exit 
 
-cd ../steps || exit 
-
-./step1-1.sh
-./step1-2-file-server.sh &
+steps/step1-1.sh
+steps/step1-2-file-server.sh &
 FILE_SERVER_PID=$!
-FILE_SERVER_PGID=$(ps -xo pid,pgid | awk '$1=="'$FILE_SERVER_PID'" {print $2}')
 sleep 2
-./step1-2.test.sh 
-
-ps -xfo pid,ppid,pgid,cmd
+steps/step1-2.test.sh 
+scripts/kill-all-children.sh "$FILE_SERVER_PID"
 
 # if ! kill -- -"$FILE_SERVER_PGID"
 # then 
@@ -27,8 +24,6 @@ ps -xfo pid,ppid,pgid,cmd
 # fi
 
 
-# echo "weehehehheheehehehhe33"
-# cd ../scripts || exit 
-# ./cleanup.sh
+scripts/cleanup.sh
 
 # # exit $EXIT_STATUS
