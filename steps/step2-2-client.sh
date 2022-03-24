@@ -1,4 +1,4 @@
-# #!/bin/sh
+#!/bin/sh
 
 # :large_orange_diamond: Action: 新たなターミナルを立ち上げてください
 
@@ -6,6 +6,7 @@
 
 # ```terminal: Reactクライアント (ターミナル)
 cp -r answers/step2-client1 client
+# shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh 
 cd client
 npm install
 # ```
