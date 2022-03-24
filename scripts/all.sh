@@ -16,7 +16,7 @@ FILE_SERVER_PID=$!
 sleep 2
 
 steps/step1-3.sh
-# steps/step1-3.test.sh 
+steps/step1-3.test.sh 
 
 # steps/step2-1.sh
 # steps/step2-1.test.sh
