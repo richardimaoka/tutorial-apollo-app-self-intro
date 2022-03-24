@@ -12,4 +12,5 @@ then
   exit 1
 fi
 
-ps -fxo pid,ppid | awk '$2=="'"$1"'" {print $1}' 
+# this might return multiple PIDs
+ps -fxo pid,ppid | awk -v ppid="$1" '$2==ppid {print $1}' 

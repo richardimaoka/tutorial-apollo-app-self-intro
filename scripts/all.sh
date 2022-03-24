@@ -21,11 +21,15 @@ steps/step1-3.test.sh
 steps/step2-1.sh
 steps/step2-1.test.sh
 
-steps/step2-2-client.sh &
+steps/step2-2-client.sh 1>/dev/null &
 CLIENT_PID=$!
 sleep 60
 
 steps/step2-2.test.sh 
+
+ps -fxo pid,ppid,pgid,tty,cmd
+echo "CLIENT_PID=$CLIENT_PID"
+echo "FILE_SERVER_PID=$FILE_SERVER_PID"
 
 scripts/kill-all-children.sh "$CLIENT_PID"
 scripts/kill-all-children.sh "$FILE_SERVER_PID"
