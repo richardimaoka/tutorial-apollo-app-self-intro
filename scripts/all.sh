@@ -34,4 +34,4 @@ scripts/kill-all-children.sh "$FILE_SERVER_PID"
 # finished
 ###############################
 
-scripts/cleanup.sh
+# scripts/cleanup.sh

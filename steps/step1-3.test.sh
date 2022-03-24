@@ -20,14 +20,15 @@ then
   EXIT_STATUS=1
 fi
 
-# # test 3: check if profile.png can be retrieved from the file server
-# PROFILE_IMAGE_URL="http://localhost:8080/images/profile.png"
-# HTTP_STATUS_CODE=$(curl -o /dev/null -Isw '%{http_code}\n' "$PROFILE_IMAGE_URL") # https://stackoverflow.com/questions/41875177/check-if-url-returns-200-using-bash
-# if [ "$HTTP_STATUS_CODE" -ne "200" ]
-# then
-#   echo "FAILED ($CURRENT_FILE): file server $PROFILE_IMAGE_URL returned HTTP status = $HTTP_STATUS_CODE" 1>&2
-#   EXIT_STATUS=1
-# fi
+# test 3: check if profile.png can be retrieved from the file server
+echo "[Info] You might see [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated, which is no issue but described in https://github.com/http-party/http-server/issues/537"
+PROFILE_IMAGE_URL="http://localhost:8080/images/profile.png"
+HTTP_STATUS_CODE=$(curl -o /dev/null -Isw '%{http_code}\n' "$PROFILE_IMAGE_URL") # https://stackoverflow.com/questions/41875177/check-if-url-returns-200-using-bash
+if [ "$HTTP_STATUS_CODE" -ne "200" ]
+then
+  echo "FAILED ($CURRENT_FILE): file server $PROFILE_IMAGE_URL returned HTTP status = $HTTP_STATUS_CODE" 1>&2
+  EXIT_STATUS=1
+fi
 
 # # test 4: take screenshot
 # if ! (cd puppeteer && npm run step1-3 1>/dev/null)
