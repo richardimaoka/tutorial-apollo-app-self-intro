@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "step1-1": "ts-node-dev step1-1-screenshot.ts"
+    "step1-3": "ts-node step1-3-screenshot.ts"
   },
   "keywords": [],
   "author": "",

@@ -8,7 +8,7 @@ import path from "path";
   const indexHtmlPath = path.join(__dirname, "..", "index.html");
   console.log(indexHtmlPath);
   await page.goto("file://" + indexHtmlPath);
-  await page.screenshot({ path: "screenshots/emerald.png" });
+  await page.screenshot({ path: "screenshots/step1-3.screenshot.png" });
 
   await browser.close();
 })();

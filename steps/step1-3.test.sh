@@ -27,7 +27,14 @@ if [ "$HTTP_STATUS_CODE" -ne "200" ]
 then
   echo "FAILED ($CURRENT_FILE): file server $PROFILE_IMAGE_URL returned HTTP status = $HTTP_STATUS_CODE" 1>&2
   EXIT_STATUS=1
-fi 
+fi
+
+# test 4: take screenshot
+if ! (cd puppeteer && npm run step1-3 1>/dev/null)
+then
+  echo "FAILED ($CURRENT_FILE): failed to take the screenshot" 1>&2
+  EXIT_STATUS=1
+fi
 
 
 if [ $EXIT_STATUS -eq "0" ]
