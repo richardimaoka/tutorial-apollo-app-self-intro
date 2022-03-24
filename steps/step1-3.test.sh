@@ -30,12 +30,12 @@ then
   EXIT_STATUS=1
 fi
 
-# # test 4: take screenshot
-# if ! (cd puppeteer && npm run step1-3 1>/dev/null)
-# then
-#   echo "FAILED ($CURRENT_FILE): failed to take the screenshot" 1>&2
-#   EXIT_STATUS=1
-# fi
+# test 4: take screenshot
+if ! (cd puppeteer && npm run step1-3 1>/dev/null)
+then
+  echo "FAILED ($CURRENT_FILE): failed to take the screenshot" 1>&2
+  EXIT_STATUS=1
+fi
 
 
 if [ $EXIT_STATUS -eq "0" ]
