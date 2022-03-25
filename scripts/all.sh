@@ -13,7 +13,7 @@ steps/step1-1.test.sh
 
 steps/step1-2-file-server.sh 1>/dev/null &
 FILE_SERVER_PID=$!
-sleep 2
+sleep 5
 
 steps/step1-3.sh
 steps/step1-3.test.sh 
@@ -27,12 +27,11 @@ sleep 60
 
 steps/step2-2.test.sh 
 
-ps -fxo pid,ppid,pgid,tty,cmd
 echo "CLIENT_PID=$CLIENT_PID"
 echo "FILE_SERVER_PID=$FILE_SERVER_PID"
 
-scripts/kill-all-children.sh "$CLIENT_PID"
-scripts/kill-all-children.sh "$FILE_SERVER_PID"
+scripts/kill-all-child-pids.sh "$CLIENT_PID"
+scripts/kill-all-child-pids.sh "$FILE_SERVER_PID"
 
 ###############################
 # finished

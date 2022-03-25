@@ -10,7 +10,7 @@ then
   exit 1
 fi
 
-for child_pid in $(./find-all-child-pids.sh "$1" | tac)
+for child_pid in $(./find-all-child-pids.sh "$1" | ./array-reverse.sh)
 do
-  
+  kill "$child_pid"
 done 
