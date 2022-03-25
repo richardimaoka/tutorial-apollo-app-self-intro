@@ -24,6 +24,9 @@ steps/step2-2-client.sh 1>/dev/null &
 CLIENT_PID=$!
 steps/step2-2.test.sh 
 
+steps/step2-3.sh
+steps/step2-3.test.sh
+
 ###############################
 # finished
 ###############################
