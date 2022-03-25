@@ -18,6 +18,7 @@ do
   then
     exit 0    
   fi
+  sleep 1
   CURRENT=$(date +%s)
 done
 
