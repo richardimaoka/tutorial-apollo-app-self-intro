@@ -357,15 +357,6 @@ npm start
 
 ![2022-03-06_00h58_13.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/5d7838cf-7363-dd60-f202-b298122165bf.png)
 
-<details><summary>ソースコードの解説</summary><div>
-
----
-
-</div></details>
-
-
-## Bonus: エラーハンドリングを入れてみる
-
 ## 5. まとめ
 
 GraphQL サーバーと React クライアントを組み合わせて、アプリケーションを構成する手順を紹介しました。
