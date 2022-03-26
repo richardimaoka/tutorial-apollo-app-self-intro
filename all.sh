@@ -27,11 +27,14 @@ steps/step2-2.test.sh
 steps/step2-3.sh
 steps/step2-3.test.sh
 
-###############################
-# finished
-###############################
+steps/step3-1-server.sh
+steps/step3-1.test.sh
 
-scripts/kill-all-child-pids.sh "$CLIENT_PID"
-scripts/kill-all-child-pids.sh "$FILE_SERVER_PID"
+# ###############################
+# # finished
+# ###############################
 
-scripts/cleanup.sh
+# scripts/kill-all-child-pids.sh "$CLIENT_PID"
+# scripts/kill-all-child-pids.sh "$FILE_SERVER_PID"
+
+# scripts/cleanup.sh

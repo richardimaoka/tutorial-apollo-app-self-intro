@@ -6,6 +6,7 @@
 
 # ```terminal: GraphQLサーバー (ターミナル)
 cp -r answers/step3-server1 server
+# shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh 
 cd server
 npm install
 # ```
