@@ -1,10 +1,8 @@
 #!/bin/sh
 
-# :large_orange_diamond: Action: 新たなターミナルを立ち上げてください
+# :large_orange_diamond: Action: 新たなターミナルを立ち上げ、以下のコマンドを実行してください
 
-# :large_orange_diamond: Action: 以下のコマンドを実行してください
-
-# ```terminal: Reactクライアント (ターミナル)
+# ```terminal: Reactクライアント・ターミナル
 cp -r answers/step2-client1 client
 # shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh 
 cd client
@@ -16,7 +14,7 @@ npm install
 # <div>
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: Reactクライアント (ターミナル)
+# ```terminal: Reactクライアント・ターミナル
 npx npm-check-updates
 # ```
 
@@ -39,7 +37,7 @@ npx npm-check-updates
 
 # :large_orange_diamond: Action: 上記メッセージの通り、以下のコマンドを実行してください
 
-# ```terminal: Reactクライアント (ターミナル)
+# ```terminal: Reactクライアント・ターミナル
 npx ncu -u
 # ```
 
@@ -51,7 +49,7 @@ npx ncu -u
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: Reactクライアント (ターミナル)
+# ```terminal: Reactクライアント・ターミナル
 npm run start
 # ```
 

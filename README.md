@@ -17,7 +17,7 @@ node と npm がインストール済みであることを確認して下さい�
 
 :large_orange_diamond: Action: ターミナルで以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン・ターミナル
 git clone https://github.com/richardimaoka/tutorial-apollo-app-self-intro.git
 cd tutorial-apollo-app-self-intro
 ```
@@ -27,11 +27,11 @@ cd tutorial-apollo-app-self-intro
 
 ## 1. HTMLでサンプル完成時の見た目を確認
 
-後ほどReactを使って実装し直しますが、まずはHTMLでサンプル完成時の見た目確認しましょう。
+後ほどReactを使って実装し直しますが、まずは簡単のためHTMLでサンプル完成時の見た目確認しましょう。
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン・ターミナル
 cp answers/step1-html/index1.html index.html
 cp answers/step1-html/profile.png profile.png
 ```
@@ -46,6 +46,8 @@ cp answers/step1-html/profile.png profile.png
 
 :white_check_mark: Result: `index.html`を含むフォルダが表示されるので、`index.html`をダブルクリックすれば、デフォルトのブラウザで開くはずです。
 
+---
+
 </div></details>
 
 :white_check_mark: Result: 以下のように表示されればOKです。
@@ -58,7 +60,7 @@ cp answers/step1-html/profile.png profile.png
 
 :large_orange_diamond: Action: 別のターミナルを立ち上げ、以下のコマンドを実行してください
 
-```terminal: ファイルサーバー (ターミナル)
+```terminal: ファイルサーバー・ターミナル
 cp -r answers/step1-file-server file-server
 cd file-server
 npm install
@@ -66,7 +68,7 @@ npm install
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: ファイルサーバー (ターミナル)
+```terminal: ファイルサーバー・ターミナル
 npm run start
 ```
 
@@ -78,7 +80,7 @@ npm run start
 
 :large_orange_diamond: Action: ファイルサーバーは走らせたまま、メインのターミナルで以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン・ターミナル
 cp answers/step1-html/index2.html index.html
 rm profile.png
 ```
@@ -94,16 +96,14 @@ rm profile.png
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン・ターミナル
 rm -f index.html
 ```
 
 
-:large_orange_diamond: Action: 新たなターミナルを立ち上げてください
+:large_orange_diamond: Action: 新たなターミナルを立ち上げ、以下のコマンドを実行してください
 
-:large_orange_diamond: Action: 以下のコマンドを実行してください
-
-```terminal: Reactクライアント (ターミナル)
+```terminal: Reactクライアント・ターミナル
 cp -r answers/step2-client1 client
 cd client
 npm install
@@ -114,7 +114,7 @@ npm install
 <div>
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: Reactクライアント (ターミナル)
+```terminal: Reactクライアント・ターミナル
 npx npm-check-updates
 ```
 
@@ -137,7 +137,7 @@ Run ncu -u to upgrade package.json
 
 :large_orange_diamond: Action: 上記メッセージの通り、以下のコマンドを実行してください
 
-```terminal: Reactクライアント (ターミナル)
+```terminal: Reactクライアント・ターミナル
 npx ncu -u
 ```
 
@@ -149,7 +149,7 @@ npx ncu -u
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: Reactクライアント (ターミナル)
+```terminal: Reactクライアント・ターミナル
 npm run start
 ```
 
@@ -179,7 +179,7 @@ npx create-react-app client --template typescript
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン・ターミナル
 cp -r answers/step2-client2/src client
 rm -f client/src/App.tsx
 ```
@@ -227,7 +227,7 @@ const profile = {
 
 :large_orange_diamond: Action: 新たなターミナルで、以下のコマンドを実行してください
 
-```terminal: GraphQLサーバー (ターミナル)
+```terminal: GraphQLサーバー・ターミナル
 cp -r answers/step3-server1 server
 cd server
 npm install
@@ -235,7 +235,7 @@ npm install
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: GraphQLサーバー (ターミナル)
+```terminal: GraphQLサーバー・ターミナル
 npm run start
 ```
 
@@ -275,7 +275,7 @@ npm run start
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン・ターミナル
 cp answers/step3-server2/* server
 ```
 
@@ -333,7 +333,7 @@ const jsonDataFile = __dirname.concat("/data.json");
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン・ターミナル
 cp -r answers/step4-client1/* client
 ```
 
@@ -342,13 +342,13 @@ cd client # remove this in README
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: Reactクライアント (ターミナル)
+```terminal: Reactクライアント・ターミナル
 npm install
 ```
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: Reactクライアント (ターミナル)
+```terminal: Reactクライアント・ターミナル
 npm start
 ```
 
@@ -391,7 +391,7 @@ Web ページ一枚分の非常に簡素な構成ですが、サーバーサイ�
 
 :large_orange_diamond: Action: 新たなターミナルで、以下のコマンドを実行してください
 
-```terminal: GraphQLサーバー (ターミナル)
+```terminal: GraphQLサーバー・ターミナル
 cp -r answers/server1 server
 cd server
 npm install
@@ -399,7 +399,7 @@ npm install
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: GraphQLサーバー (ターミナル)
+```terminal: GraphQLサーバー・ターミナル
 npm run start
 ```
 

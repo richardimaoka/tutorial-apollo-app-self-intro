@@ -4,7 +4,7 @@
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: メイン (ターミナル)
+# ```terminal: メイン・ターミナル
 cp answers/step3-server2/* server
 # ```
 

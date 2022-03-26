@@ -4,7 +4,7 @@
 
 # :large_orange_diamond: Action: 新たなターミナルで、以下のコマンドを実行してください
 
-# ```terminal: GraphQLサーバー (ターミナル)
+# ```terminal: GraphQLサーバー・ターミナル
 cp -r answers/step3-server1 server
 # shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh 
 cd server
@@ -13,7 +13,7 @@ npm install
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: GraphQLサーバー (ターミナル)
+# ```terminal: GraphQLサーバー・ターミナル
 npm run start
 # ```
 

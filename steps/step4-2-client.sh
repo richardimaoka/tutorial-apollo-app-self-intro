@@ -5,13 +5,13 @@ cd client # remove this in README
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: Reactクライアント (ターミナル)
+# ```terminal: Reactクライアント・ターミナル
 npm install
 # ```
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: Reactクライアント (ターミナル)
+# ```terminal: Reactクライアント・ターミナル
 npm start
 # ```
 

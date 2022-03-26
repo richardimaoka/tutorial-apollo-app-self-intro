@@ -4,6 +4,6 @@
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: メイン (ターミナル)
+# ```terminal: メイン・ターミナル
 cp -r answers/step4-client1/* client
 # ```

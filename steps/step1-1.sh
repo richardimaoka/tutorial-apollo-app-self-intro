@@ -5,11 +5,11 @@ cd ../ || exit               # REMOVE THIS IN aggregate.sh - cd to the git repos
 
 # ## 1. HTMLでサンプル完成時の見た目を確認
 
-# 後ほどReactを使って実装し直しますが、まずはHTMLでサンプル完成時の見た目確認しましょう。
+# 後ほどReactを使って実装し直しますが、まずは簡単のためHTMLでサンプル完成時の見た目確認しましょう。
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: メイン (ターミナル)
+# ```terminal: メイン・ターミナル
 cp answers/step1-html/index1.html index.html
 cp answers/step1-html/profile.png profile.png
 # ```
@@ -23,6 +23,8 @@ cp answers/step1-html/profile.png profile.png
 # ![2022-03-02_08h23_30.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/f18ae5f9-e11a-9677-4fdf-d1c8b3ffe45a.png)
 
 # :white_check_mark: Result: `index.html`を含むフォルダが表示されるので、`index.html`をダブルクリックすれば、デフォルトのブラウザで開くはずです。
+
+# ---
 
 # </div></details>
 

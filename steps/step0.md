@@ -17,7 +17,7 @@ node と npm がインストール済みであることを確認して下さい�
 
 :large_orange_diamond: Action: ターミナルで以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン・ターミナル
 git clone https://github.com/richardimaoka/tutorial-apollo-app-self-intro.git
 cd tutorial-apollo-app-self-intro
 ```

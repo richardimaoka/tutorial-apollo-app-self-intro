@@ -7,7 +7,7 @@ cd ../ || exit               # REMOVE THIS IN aggregate.sh - cd to the git repos
 
 # :large_orange_diamond: Action: 別のターミナルを立ち上げ、以下のコマンドを実行してください
 
-# ```terminal: ファイルサーバー (ターミナル)
+# ```terminal: ファイルサーバー・ターミナル
 cp -r answers/step1-file-server file-server
 # shellcheck disable=SC2164 # REMOVE THIS IN aggregate.sh 
 cd file-server
@@ -16,7 +16,7 @@ npm install
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: ファイルサーバー (ターミナル)
+# ```terminal: ファイルサーバー・ターミナル
 npm run start
 # ```
 

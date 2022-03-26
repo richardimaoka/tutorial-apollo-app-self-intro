@@ -5,7 +5,7 @@ cd ../ || exit               # REMOVE THIS IN aggregate.sh - cd to the git repos
 
 # :large_orange_diamond: Action: ファイルサーバーは走らせたまま、メインのターミナルで以下のコマンドを実行してください
 
-# ```terminal: メイン (ターミナル)
+# ```terminal: メイン・ターミナル
 cp answers/step1-html/index2.html index.html
 rm profile.png
 # ```
