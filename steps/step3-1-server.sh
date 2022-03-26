@@ -45,6 +45,6 @@ npm run start
 
 # :white_check_mark: Result: Stringのmock値である"Hello World"で埋められたレスポンスが得られます。
 
-# ![2022-03-12_00h45_02.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/1f54b20b-5c40-9894-cc12-9ea2cbe11a38.png)
+# ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/a955b1f4-0de0-0df7-e294-93eae6065148.png)
 
 # ここから先は、mock値ではなくResolverを使ってGraphQLサーバーからのレスポンスを返します。

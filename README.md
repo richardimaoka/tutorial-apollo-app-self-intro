@@ -267,7 +267,7 @@ npm run start
 
 :white_check_mark: Result: Stringのmock値である"Hello World"で埋められたレスポンスが得られます。
 
-![2022-03-12_00h45_02.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/1f54b20b-5c40-9894-cc12-9ea2cbe11a38.png)
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/a955b1f4-0de0-0df7-e294-93eae6065148.png)
 
 ここから先は、mock値ではなくResolverを使ってGraphQLサーバーからのレスポンスを返します。
 
@@ -327,7 +327,7 @@ const jsonDataFile = __dirname.concat("/data.json");
 
 :white_check_mark: Result: 以下のように表示されればOKです。
 
-![2022-03-12_00h48_17.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/5557c9eb-cde6-6d3b-a53b-621306cbdcb2.png)
+![2022-03-26_18h14_26.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/2175363a-cf8d-5192-6f30-2d310463d099.png)
 
 ## 4. Reactクライアントで、GraphQLサーバーから取得したレスポンスを使う
 
@@ -337,7 +337,6 @@ const jsonDataFile = __dirname.concat("/data.json");
 cp -r answers/step4-client1/* client
 ```
 
-cd client # remove this in README
 :large_orange_diamond: Action: Ctrl+CでReactクライアントのターミナルを停止してください。
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
@@ -386,51 +385,3 @@ Web ページ一枚分の非常に簡素な構成ですが、サーバーサイ�
 - Node.js http-server https://github.com/http-party/http-server
 - GraphQL 公式 https://graphql.org/
 - How to GraphQL https://www.howtographql.com/
-
-## 9. GraphQLサーバー立ち上げ
-
-:large_orange_diamond: Action: 新たなターミナルで、以下のコマンドを実行してください
-
-```terminal: GraphQLサーバー・ターミナル
-cp -r answers/server1 server
-cd server
-npm install
-```
-
-:large_orange_diamond: Action: 以下のコマンドを実行してください
-
-```terminal: GraphQLサーバー・ターミナル
-npm run start
-```
-
-:large_orange_diamond: Action: ブラウザで http://localhost:4000/ を開いてください
-
-:white_check_mark: Result: 以下のようなApollo Studio Explorerの画面が表示されます。
-
-![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/58dd6755-b37b-9f64-3047-a1a2e8e7b0b9.png)
-
-:large_orange_diamond: Action: "Query your server"ボタンを押してください
-
-:white_check_mark: Result: 以下のような画面に遷移します。
-
-![2022-03-06_09h04_06.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/e32d47ea-e138-8beb-acec-1441174f7e11.png)
-
-:large_orange_diamond: Action: 以下のクエリをApollo Studio Explorerの画面に貼り付けて、"Run"ボタンを押してください
-
-```
-{
-  me {
-    name
-    residence
-    imgSrc
-    jobTitle
-    description
-  }
-}
-```
-
-:white_check_mark: Result: Stringのmock値である"Hello World"で埋められたレスポンスが得られます。
-
-![2022-03-12_00h45_02.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/1f54b20b-5c40-9894-cc12-9ea2cbe11a38.png)
-
-ここから先は、mock値ではなくResolverを使ってGraphQLサーバーからのレスポンスを返します。

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd client # remove this in README
+cd client # REMOVE THIS IN aggregate.sh
 # :large_orange_diamond: Action: Ctrl+CでReactクライアントのターミナルを停止してください。
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください

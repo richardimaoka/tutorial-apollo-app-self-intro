@@ -56,4 +56,4 @@ cp answers/step3-server2/* server
 
 # :white_check_mark: Result: 以下のように表示されればOKです。
 
-# ![2022-03-12_00h48_17.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/5557c9eb-cde6-6d3b-a53b-621306cbdcb2.png)
+# ![2022-03-26_18h14_26.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/2175363a-cf8d-5192-6f30-2d310463d099.png)
