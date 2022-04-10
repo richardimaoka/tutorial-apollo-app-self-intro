@@ -132,13 +132,14 @@ All dependencies match the latest package versions :)
  apollo-server   ^3.6.0  →   ^3.6.2     
  graphql        ^16.1.0  →  ^16.3.0    
 
-Run ncu -u to upgrade package.json
+Run npx npm-check-updates -u to upgrade package.json
 ```
 
 :large_orange_diamond: Action: 上記メッセージの通り、以下のコマンドを実行してください
 
 ```terminal: Reactクライアント・ターミナル
-npx ncu -u
+npx npm-check-updates -u
+npm install
 ```
 
 これで、最新バージョンのnpmパッケージ群がインストールされます。
